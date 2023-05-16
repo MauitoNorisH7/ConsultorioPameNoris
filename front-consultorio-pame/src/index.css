@@ -63,6 +63,9 @@ header{
   right: 7.5%;
   align-items: center;
 }
+.facebook-logoM, .instagramLogoM{
+  display: none;
+}
 .dropdown-btn-header{
   display: none;
 }
@@ -333,6 +336,9 @@ header ul li a{
   column-gap: 1rem;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.slider-mobile{
+  display: none;
 }
 .slider{
   width: 60rem;
@@ -660,7 +666,7 @@ header ul li a{
   display: flex;
   justify-content: right;
 }
-.copyright-disclaimer{
+.copyright-disclaimer-pc{
   width: 100%;
   font-size: large;
   font-weight: 400;
@@ -669,6 +675,9 @@ header ul li a{
   flex-direction: row;
   justify-content: center;  
   gap: 0.5rem;
+}
+.copyright-disclaimer-mobile{
+  display: none;
 }
 
 @media (max-width: 500px){
@@ -687,48 +696,286 @@ header ul li a{
   }
   .action-mobile{
     display: flex;
-    min-width: max-content;
+    min-width: 10rem;
     align-items: center;
     justify-content: space-around;
   }
   /* Configuración del logo de Facebook, sobre todo su posición */
-  .facebook-logo{
+  .facebook-logoM{
     display: flex;
     position: relative;
-    margin-left: 4rem;
     align-items: center;
   }
+  .facebook-logo{
+    display: none;
+  }
   /* Configuración del logo de Instagram, sobre todo su posición */
-  .instagramLogo{
+  .instagramLogoM{
     display: flex;
     position: relative;
-    margin-left: 2rem;
     align-items: center;
+  }
+  .instagramLogo{
+    display: none;
   }
   /* Posición del botón desplegable de acciones */
   .dropdown-btn-header{
     display: flex;
     position: absolute;
-    right: 1.5rem;
+    right: 1rem;
   }
   /* Configuración de la lista de las acciones del botón desplegable */
+  .dropdown-options{
+    display: flex;
+    width: 10rem;
+    height: 18.5rem;
+    position: fixed;
+    top: 6rem;
+    right: -15rem;
+    transition: 1s;
+    box-shadow: inset 0px 7px 10px -7px black;
+    border: 1px solid black;
+    background:rgb(189, 231, 255);
+  }
+  .menu-btn{
+    border: none;
+    background: none;
+
+  }
+  .menu-btn:hover ~ .dropdown-options{
+    position: fixed;
+    right: 0;
+  }
+  .dropdown-options ul li:first-child{
+    margin-left: 0rem;
+    margin-top: 1.25rem;
+  }
+  .dropdown-options ul li{
+    margin: 1rem 0 1rem 0;
+  }
   .dropdown{
     display: flex;
     flex-direction: column;
     position: absolute;
+    align-items: start;
   }
-  .dropdown li {
-    margin: 0.5rem 0 0.5rem 0;
+  /* Fin de la configuracón del botón desplegable */
+
+  /* Configuración de la portada */
+  .bgFrontpage{
+    width: auto;
+    height: 40rem;
+    position: relative;
+    left: -30rem;
+  }
+  /* Fin de configuración de la portada */
+
+  /* Inicio de configuración de los testimonios */
+  .testimonials{
+    background-size: 300%;
+    background-position: bottom;
   }
 
-  /* Fin de la configuracón del botón desplegable */
-  .section-services{
+  .testimonialsGroup{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  .testimonial{
+    width: auto;
+  }
+  .testimonialM3, .testimonialM4{
     display: none;
   }
-  .section-gallery{
-    display:none;
+  /* Fin de configuración de testimonios */
+
+  /* Inicio de configuración de los servicios */
+  /* carrousel */
+  .servicesGroup{  
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    scroll-behavior: auto;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
   }
+  /* Fin de cofiguración de los servicios */
+
+  /* Inicio de configuración de galería */
+  .section-gallery .slider{
+    display: none;
+  }
+  .slider-mobile{
+    display: flex;
+    overflow-y: hidden;
+    gap: 1rem;
+  }
+  .slider-mobile .slides .imgGalleryGroup:last-child{
+    padding-right: 1rem;
+  }
+  /* Fin de configuración de galería */
+
+  /* Inicio de configuración de contacto */
   .section-contact{
+    width: 100%;
+    height:79rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+  .contact{
+    flex-direction: column;
+  }
+  .contact h1{
+    margin: 1rem 0 1rem 0;
+  }
+  .contact h3{
+    margin: 0 0 2rem 0
+  }
+  .location{
+    width: 100%;
+    height: auto;
+  }
+  .appointment{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: start;
+    padding-top: 0;
+  }
+  .contact-input-txt, .input-booktime{
+    width: calc(50% - 2rem);
+  }
+  .submit-div{
+    width: calc(50% - 2rem);
+    margin-bottom: 1rem;
+  }
+  .copyright-disclaimer-pc{
     display: none;
   }
+  .copyright-disclaimer-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin-top: 31.75rem;
+  }
+  /* Fin de configuración de contacto */
+}
+
+
+@media (max-width: 1024px){
+  html{
+    /* Modificaciones de la medida REM */
+    font-size: 15px;
+  }
+  /* Modificaciones en la barra de navegación */
+  .mainHeader{
+    width: 100%;
+    height: 6rem;
+  }
+
+  /* Configuración del index (barra de acciones) */
+  header{
+    font-size: auto;
+  }
+  header ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  header ul li:first-child {
+    padding: 0 10px;
+    margin-left: 10px;
+    list-style: none;
+  }
+  header ul li {
+    padding: 0 10px;
+    list-style: none;
+  }
+
+  /* Fin de configuración del index */
+
+  /* Configuración de los testimonios (ancho) */
+  .testimonialsGroup{
+    width: 90%;
+    height: 85%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial{
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0px 0px 10px 0.5px rgb(77,87,109);
+    z-index: 1;
+  }
+
+   /* Inicio de configuración de los servicios */
+  /* carrousel */
+  .servicesGroup{  
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    scroll-behavior: auto;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  /* Fin de cofiguración de los servicios */
+
+    /* Inicio de configuración de galería */
+    .section-gallery .slider{
+      display: none;
+    }
+    .slider-mobile{
+      display: flex;
+      overflow-y: hidden;
+      gap: 1rem;
+    }
+    .slider-mobile .slides .imgGalleryGroup:last-child{
+      padding-right: 1rem;
+    }
+    /* Fin de configuración de galería */
+
+    /* Inicio de configuración de contacto */
+    .section-contact{
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    .contact-form{
+      width: 27rem;
+      flex-wrap: wrap;
+    }
+    .contact-input-txt{
+      max-width: 25rem;
+    }
+    .input-booktime{
+      width: 100%;
+      height: auto;
+      margin: -0.5rem 0 1rem 0;
+      box-sizing: border-box;
+      display: flex;
+      position: relative;
+      justify-content: left;  
+    }
+    .submit-div{
+      width: 40rem;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
 }

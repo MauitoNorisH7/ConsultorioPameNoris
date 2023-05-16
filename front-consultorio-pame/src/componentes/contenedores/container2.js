@@ -11,7 +11,7 @@ export const Container2 = () => {
         <div className='testimonials'>
           <div className='testimonialsGroup'>
 
-            <div className='testimonial'>
+            <div className='testimonial testimonialM1'>
               <div className='img-name-starPerson'>
                 <img className='imgPerson' src='tamaño-infantil.jpg' alt='Primer cliente'/>
                 <div className='namePerson'>
@@ -29,7 +29,7 @@ export const Container2 = () => {
               </div>
             </div>
 
-            <div className='testimonial'>
+            <div className='testimonial testimonialM2'>
               <div className='img-name-starPerson'>
                 <img className='imgPerson' src='tamaño-infantil.jpg' alt='Segundo cliente'/>
                 <div className='namePerson'>
@@ -47,7 +47,7 @@ export const Container2 = () => {
               </div>
             </div>
 
-            <div className='testimonial'>
+            <div className='testimonial testimonialM3'>
               <div className='img-name-starPerson'>
                 <img className='imgPerson' src='tamaño-infantil.jpg' alt='Tercer cliente'/>
                 <div className='namePerson'>
@@ -65,7 +65,7 @@ export const Container2 = () => {
               </div>
             </div>
 
-            <div className='testimonial'>
+            <div className='testimonial testimonialM4'>
               <div className='img-name-starPerson'>
                 <img className='imgPerson' src='tamaño-infantil.jpg' alt='Cuarto cliente'/>
                 <div className='namePerson'>

@@ -6,8 +6,6 @@ export const Container5 = () => {
         <div className='contact'> 
             <div className='location'>
                 <h1>Información <br/>de contacto</h1>
-
-
                     <iframe id='location-frame' 
                             title='Ubicación del consultorio de Pamela Noris'
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5702818648165!2d-89.6072541242851!3d21.00985578063467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56771ef481faaf%3A0xa14b748f53aa266f!2sClinica%20Dental%20Oralma!5e0!3m2!1ses!2smx!4v1681769943422!5m2!1ses!2smx">
@@ -59,9 +57,12 @@ export const Container5 = () => {
             </div>
         </div>
         <br/>
-        <div className='copyright-disclaimer'>
+        <div className='copyright-disclaimer-pc'>
             <box-icon className='copyright-logo' name='copyright'></box-icon>
             <p>All Rights Reserved. You keep all rights to your material.</p>
+        </div>
+        <div className='copyright-disclaimer-mobile'>
+        <box-icon className='copyright-logo' name='copyright'></box-icon> <p>All Rights Reserved. You keep all rights to your material.</p>
         </div>
     </section>
   )

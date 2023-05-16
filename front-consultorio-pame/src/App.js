@@ -8,6 +8,7 @@ import { Container2 } from "./componentes/contenedores/container2";
 import { Container3 } from "./componentes/contenedores/container3";
 import { Container4 } from "./componentes/contenedores/container4";
 import { Container5 } from "./componentes/contenedores/container5";
+// import { DropdownEffect } from './componentes/header/dropdown';
 
 function App() {
   return (

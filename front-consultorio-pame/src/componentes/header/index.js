@@ -33,9 +33,7 @@ export const Header = () => {
 
       </div>
 
-      <div className='action-mobile'>
-      
-        <div className='facebook-logo'>
+      <div className='facebook-logo'>
           <a href='https://www.facebook.com/dentista.pamelanoris/' target={'_blank'}>
             <box-icon type='logo' name='facebook-circle' animation='tada-hover' size='md' color='grey'></box-icon>
           </a>
@@ -45,20 +43,34 @@ export const Header = () => {
           <a href='https://www.instagram.com/dra.pamelanoris/' target={'_blank'}>
             <box-icon type='logo' name='instagram' animation='tada-hover' size='md' color='grey'></box-icon>
           </a>
+      </div>
+
+      <div className='action-mobile'>
+        <div className='facebook-logoM'>
+          <a href='https://www.facebook.com/dentista.pamelanoris/' target={'_blank'}>
+            <box-icon type='logo' name='facebook-circle' animation='tada-hover' size='md' color='grey'></box-icon>
+          </a>
+        </div>
+
+        <div className='instagramLogoM'>
+          <a href='https://www.instagram.com/dra.pamelanoris/' target={'_blank'}>
+            <box-icon type='logo' name='instagram' animation='tada-hover' size='md' color='grey'></box-icon>
+          </a>
         </div>
 
         <div className='dropdown-btn-header'>
           <button className='menu-btn'>
             <a><box-icon name='menu' animation='flashing-hover' size='lg' color='grey'></box-icon> </a>
           </button>
-
-          {/* <ul className='dropdown'>
-            <li><a href='#'>¿Quién soy?</a></li>
-            <li><a href='#'>Testimonios</a></li>
-            <li><a href='#'>Servicios</a></li>
-            <li><a href='#'>Galería</a></li>
-            <li><a href='#'>Contacto</a></li>
-          </ul> */}
+          <div className='dropdown-options'>
+            <ul className='dropdown'>
+              <li><a className='dropdown-option-1' href='#Quien-soy'>¿Quién soy?</a></li>
+              <li><a className='dropdown-option-2' href='#Testimonios'>Testimonios</a></li>
+              <li><a className='dropdown-option-3' href='#Servicios'>Servicios</a></li>
+              <li><a className='dropdown-option-4' href='#Fotos'>Galería</a></li>
+              <li><a className='dropdown-option-5' href='#Contacto'>Contacto</a></li>
+            </ul>
+          </div>
         </div> 
       </div>
         

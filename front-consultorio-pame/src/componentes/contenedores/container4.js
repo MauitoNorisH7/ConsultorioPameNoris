@@ -51,6 +51,37 @@ export const Container4 = () => {
             </div>
             </div> 
         </div>  
+
+        <div className='slider-mobile'>
+            <div className='slides'>
+                <div className='imgGalleryGroup slide first'>
+                    <div className='Gallery'>
+                        <div className='img1'></div>
+                        <div className='img2'></div>
+                        <div className='img3'></div>
+                        <div className='img4'></div>
+                    </div>
+                </div>
+
+                <div className='imgGalleryGroup slide'>
+                    <div className='Gallery'>
+                        <div className='img5'></div>
+                        <div className='img6'></div>
+                        <div className='img7'></div>
+                        <div className='img8'></div>
+                    </div>
+                </div>
+
+                <div className='imgGalleryGroup slide'>
+                    <div className='Gallery'>
+                        <div className='img9'></div>
+                        <div className='img10'></div>
+                        <div className='img11'></div>
+                        <div className='img12'></div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
     </section>
   )
 }
