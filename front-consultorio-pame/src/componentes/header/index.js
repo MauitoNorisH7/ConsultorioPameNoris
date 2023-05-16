@@ -33,18 +33,8 @@ export const Header = () => {
 
       </div>
 
-        <div className='dropdown-btn-header'>
-          <a className='dropdown-btn' href='#'><box-icon name='menu' animation='flashing-hover' size='lg' color='grey'></box-icon></a>
-
-          <ul className='dropdown'>
-            <li><a href='#'>¿Quién soy?</a></li>
-            <li><a href='#'>Testimonios</a></li>
-            <li><a href='#'>Servicios</a></li>
-            <li><a href='#'>Galería</a></li>
-            <li><a href='#'>Contacto</a></li>
-          </ul>
-        </div>
-
+      <div className='action-mobile'>
+      
         <div className='facebook-logo'>
           <a href='https://www.facebook.com/dentista.pamelanoris/' target={'_blank'}>
             <box-icon type='logo' name='facebook-circle' animation='tada-hover' size='md' color='grey'></box-icon>
@@ -56,6 +46,22 @@ export const Header = () => {
             <box-icon type='logo' name='instagram' animation='tada-hover' size='md' color='grey'></box-icon>
           </a>
         </div>
+
+        <div className='dropdown-btn-header'>
+          <button className='menu-btn'>
+            <a><box-icon name='menu' animation='flashing-hover' size='lg' color='grey'></box-icon> </a>
+          </button>
+
+          {/* <ul className='dropdown'>
+            <li><a href='#'>¿Quién soy?</a></li>
+            <li><a href='#'>Testimonios</a></li>
+            <li><a href='#'>Servicios</a></li>
+            <li><a href='#'>Galería</a></li>
+            <li><a href='#'>Contacto</a></li>
+          </ul> */}
+        </div> 
+      </div>
+        
     </header>
   )
 }

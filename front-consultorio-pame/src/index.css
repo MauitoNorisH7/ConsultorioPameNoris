@@ -685,49 +685,43 @@ header ul li a{
   .actions{
     display: none;
   }
-  /* Dimensiones del botón desplegable de acciones */
-  .dropdown-btn-header{
+  .action-mobile{
     display: flex;
-    position: absolute;
-    right: 11rem;
+    min-width: max-content;
     align-items: center;
-  }
-  /* Configuración de la lista de las acciones del botón desplegable */
-  .dropdown-btn-header ul{
-    list-style: none;
-  }
-  .dropdown-btn-header ul li{
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-btn-header ul li a{
-    display: block;
-  }
-  .dropdown li{
-    display: block;
-  }
-  .dropdown{
-    display: none;
-    z-index: 100;
-  }
-  .dropdown-btn:hover .dropdown{
-    display: block;
+    justify-content: space-around;
   }
   /* Configuración del logo de Facebook, sobre todo su posición */
   .facebook-logo{
     display: flex;
-    position: absolute;
-    right: 6rem;
+    position: relative;
+    margin-left: 4rem;
     align-items: center;
   }
   /* Configuración del logo de Instagram, sobre todo su posición */
   .instagramLogo{
     display: flex;
-    position: absolute;
-    right: 2rem;
+    position: relative;
+    margin-left: 2rem;
     align-items: center;
   }
-  
+  /* Posición del botón desplegable de acciones */
+  .dropdown-btn-header{
+    display: flex;
+    position: absolute;
+    right: 1.5rem;
+  }
+  /* Configuración de la lista de las acciones del botón desplegable */
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .dropdown li {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  /* Fin de la configuracón del botón desplegable */
   .section-services{
     display: none;
   }
