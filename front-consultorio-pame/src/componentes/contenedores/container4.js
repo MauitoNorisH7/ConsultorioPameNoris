@@ -45,9 +45,9 @@ export const Container4 = () => {
                 </div>
 
             <div className='navigation-manual'>
-                <label id='first-btn' for='radio1' className='manual-btn manual-btn1'></label>
-                <label for='radio2' className='manual-btn manual-btn2'></label>
-                <label for='radio3' className='manual-btn manual-btn3'></label>
+                <label id='first-btn' htmlFor='radio1' className='manual-btn manual-btn1'></label>
+                <label htmlFor='radio2' className='manual-btn manual-btn2'></label>
+                <label htmlFor='radio3' className='manual-btn manual-btn3'></label>
             </div>
             </div> 
         </div>  

@@ -21,17 +21,17 @@ export const Container5 = () => {
                 <h1>Agenda una cita</h1>
 
                 <form className='contact-form'>
-                    <label for="name">Nombre completo:</label><br/>
+                    <label htmlFor="name">Nombre completo:</label><br/>
                     <input type="text" className='contact-input-txt' id="name" name="name"/> <br/>
 
-                    <label for="cellphonenumber">Número de celular:</label><br/>
+                    <label htmlFor="cellphonenumber">Número de celular:</label><br/>
                     <input type="tel" className='contact-input-txt' id="cellphonenumber" name="cellphonenumber"/> <br/>
 
-                    <label for="email">Correo:</label><br/>
+                    <label htmlFor="email">Correo:</label><br/>
                     <input type="email" className='contact-input-txt' id="email" name="email"/> <br/>
 
                     {/* <div className='input-booktime'> */}
-                    <label for="booktime">Horario:</label><br/>
+                    <label htmlFor="booktime">Horario:</label><br/>
                     <input type="radio" name="booktime" className='radio-input' id="radio-time1"/> 
                     <input type="radio" name="booktime" className='radio-input' id="radio-time2"/> 
                     <input type="radio" name="booktime" className='radio-input' id="radio-time3"/> 
@@ -39,15 +39,15 @@ export const Container5 = () => {
                     <input type="radio" name="booktime" className='radio-input' id="radio-time5"/> 
 
                     <div className='input-booktime'>
-                        <label for='radio-time1' className='manual-time-btn manual-time-btn1'><p>7:30</p></label>
-                        <label for='radio-time2' className='manual-time-btn manual-time-btn2'><p>8:00</p></label>
-                        <label for='radio-time3' className='manual-time-btn manual-time-btn3'><p>8:30</p></label>
-                        <label for='radio-time4' className='manual-time-btn manual-time-btn4'><p>9:00</p></label>
-                        <label for='radio-time5' className='manual-time-btn manual-time-btn5'><p>9:30</p></label>
+                        <label htmlFor='radio-time1' className='manual-time-btn manual-time-btn1'><p>7:30</p></label>
+                        <label htmlFor='radio-time2' className='manual-time-btn manual-time-btn2'><p>8:00</p></label>
+                        <label htmlFor='radio-time3' className='manual-time-btn manual-time-btn3'><p>8:30</p></label>
+                        <label htmlFor='radio-time4' className='manual-time-btn manual-time-btn4'><p>9:00</p></label>
+                        <label htmlFor='radio-time5' className='manual-time-btn manual-time-btn5'><p>9:30</p></label>
                         <br/>
                     </div>
                         
-                    <label for="message">Mensaje:</label><br/>
+                    <label htmlFor="message">Mensaje:</label><br/>
                     <input type="text" className='contact-input-txt' id="message" name="message"/> <br/> 
 
                     <div className='submit-div'>
