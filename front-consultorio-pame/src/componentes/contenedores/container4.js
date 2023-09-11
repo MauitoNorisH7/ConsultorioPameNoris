@@ -16,6 +16,7 @@ export const Container4 = () => {
                 <input type='radio' name='radio-btn' id='radio1'/>
                 <input type='radio' name='radio-btn' id='radio2'/>
                 <input type='radio' name='radio-btn' id='radio3'/>
+                {/* <input type='radio' name='radio-btn' id='radio4'/> */}
 
                 <div className='imgGalleryGroup slide first'>
                     <div className='Gallery'>
@@ -48,6 +49,7 @@ export const Container4 = () => {
                 <label id='first-btn' htmlFor='radio1' className='manual-btn manual-btn1'></label>
                 <label htmlFor='radio2' className='manual-btn manual-btn2'></label>
                 <label htmlFor='radio3' className='manual-btn manual-btn3'></label>
+                {/* <label htmlFor='radio4' className='manual-btn manual-btn4'></label> */}
             </div>
             </div> 
         </div>  

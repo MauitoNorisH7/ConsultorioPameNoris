@@ -220,6 +220,9 @@ header ul li a{
   align-items: center;
   flex-wrap: wrap;
   z-index: 1;
+  row-gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .testimonial{
   width: 100%;
@@ -230,8 +233,8 @@ header ul li a{
   border-radius: 2.5%;
   margin: 0 1.25rem 0 1.25rem;
   box-shadow: 0px 0px 10px 0.5px rgb(77,87,109);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
   z-index: 1;
 }
 
@@ -285,6 +288,9 @@ header ul li a{
   align-items: center;
   flex-wrap: wrap;
   z-index: 1;
+  row-gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .singleService {
@@ -296,8 +302,8 @@ header ul li a{
   border-radius: 2.5%;
   margin: 0 1.25rem 0 1.25rem;
   box-shadow: 0px 0px 10px 0.5px rgb(188, 194, 208);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
 }
 
 .imgService{
@@ -329,10 +335,11 @@ header ul li a{
 }
 .imgGalleryGroup{
   width: 100%;
-  height: 50rem;
+  height: auto;
   display: flex;
   justify-content: center;
-  margin: 0 1rem -4.5rem 1rem;
+  margin: 0 1rem -1.5rem;
+  padding-bottom: 100px;
 }
 .Gallery{
   width: 60rem;
@@ -348,17 +355,18 @@ header ul li a{
   display: none;
 }
 .slider{
-  width: 60rem;
+  width: 100%;
+  height: auto;
   overflow: hidden;
   position: relative;
-  left: calc(100vw/2 - 30rem);
+  /* left: calc(100vw/2 - 30rem); */
 }
 .slides{
   width: 180rem;
   display: flex;
 }
 .slide{
-  width: 60rem;
+  width: 100%;
   transition: 2s;
 }
 /* Start of manual navigation */
@@ -390,13 +398,13 @@ header ul li a{
 }
 
 #radio1:checked ~ .first{
-  margin-left: -0rem;
+  margin-left: 1rem;
 }
 #radio2:checked ~ .first{
-  margin-left: -62rem;
+  margin-left: -40rem;
 }
 #radio3:checked ~ .first{
-  margin-left: -124rem;
+  margin-left: -120rem;
 }
 
 #radio1:checked ~ .navigation-manual .manual-btn1{
@@ -412,38 +420,45 @@ header ul li a{
 /* End of manual navigation */
 .img1{
   box-sizing: border-box;
-  width: 35rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/1.jpg);
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img2{
   box-sizing: border-box;
-  width: 23.5rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/2.jpg);
   background-repeat: no-repeat;
   background-position: 0 ;
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+}
 .img3{
   box-sizing: border-box;
-  width: 23.5rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/3.jpg);
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img4{
   box-sizing: border-box;
-  width: 35rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/4.jpg);
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img5{
   box-sizing: border-box;
   width: 23.5rem;
@@ -451,69 +466,85 @@ header ul li a{
   background-image: url(../public/Website-Images/Fotos/5.jpg);
   background-repeat: no-repeat;
   background-position: 0;
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img6{
   box-sizing: border-box;
-  width: 35rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/6.jpg);
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img7{
   box-sizing: border-box;
-  width: 35rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/7.jpg);
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img8{
   box-sizing: border-box;
-  width: 23.5rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/8.jpg);
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img9{
   box-sizing: border-box;
   width: 35rem;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/9.jpeg);
-  background-size: cover;
+  background-size: 100%;
   background-position: 0;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img10{
   box-sizing: border-box;
-  width: 23.5rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/10.jpg);
   background-repeat: no-repeat;
   background-position: 0 ;
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img11{
   box-sizing: border-box;
-  width: 23.5rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/11.jpg);
-  background-size: cover;
+  background-size: 100%;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 .img12{
   box-sizing: border-box;
-  width: 35rem;
+  width: 41.5%;
   height: 19.5rem;
   background-image: url(../public/Website-Images/Fotos/12.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-position: 0;
   box-shadow: inset 0 0 2px 0px black;
-  border-radius: 1%;}
+  border-radius: 1%;
+  background-repeat: no-repeat;
+}
 
   /* CONTACT */
 .section-contact{
@@ -784,7 +815,7 @@ header ul li a{
   /* Fin de configuración de la portada */
   
   /* Inicio de configuración de galería */
-  .section-gallery .slider{
+  /* .section-gallery .slider{
     display: none;
   }
   .slider-mobile{
@@ -794,7 +825,7 @@ header ul li a{
   }
   .slider-mobile .slides .imgGalleryGroup:last-child{
     padding-right: 1rem;
-  }
+  } */
   /* Fin de configuración de galería */
 
   /* Inicio de configuración de contacto */
