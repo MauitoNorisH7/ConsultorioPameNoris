@@ -1,6 +1,39 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 export const Header = () => {
+
+  const [visibleDropDown, setDropDown] = useState(false);
+  const dropdownRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  const manejarMenuClick = () => {
+    setDropDown(!visibleDropDown);
+  }
+
+
+  useEffect(() => {
+    const manerarClickDocumento = (e) => {
+      // Si el clic fue fuera del menú desplegable y fuera del botón que activa el menú
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target) && !buttonRef.current.contains(e.target)) {
+        setDropDown(false);
+      }
+    };
+
+    const manejarScrollDocumento = () => {
+      setDropDown(false);
+    };
+
+    // Agregando event listeners al document
+    document.addEventListener('click', manerarClickDocumento);
+    document.addEventListener('scroll', manejarScrollDocumento);
+
+    // Limpiando event listeners al desmontar el componente
+    return () => {
+      document.removeEventListener('click', manerarClickDocumento);
+      document.removeEventListener('scroll', manejarScrollDocumento);
+    };
+  }, [visibleDropDown]);
+
   return (
     <header className='mainHeader'>
       <div className='container'>
@@ -59,11 +92,11 @@ export const Header = () => {
         </div>
 
         <div className='dropdown-btn-header'>
-          <button className='menu-btn'>
+          <button className='menu-btn' ref={buttonRef} onClick={manejarMenuClick}>
             <a><box-icon name='menu' animation='flashing-hover' size='lg' color='grey'></box-icon> </a>
           </button>
-          <div className='dropdown-options'>
-            <ul className='dropdown'>
+          <div className='dropdown-options' ref={dropdownRef} style={{ display: visibleDropDown ? 'block' : 'none' }}>
+            <ul className='dropdown' style={{position: 'fixed', right: 0}}>
               <li><a className='dropdown-option-1' href='#Quien-soy'>¿Quién soy?</a></li>
               <li><a className='dropdown-option-2' href='#Testimonios'>Testimonios</a></li>
               <li><a className='dropdown-option-3' href='#Servicios'>Servicios</a></li>

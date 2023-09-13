@@ -136,8 +136,14 @@ header ul li a{
 }
 .bgFrontpage{
   width: 100%;
+  height: auto;
+  display: block;
   margin: 0;
   padding: 0;
+}
+
+.bgFrontpage img {
+  width: 100%;
 }
 
 /* Lines between containers */
@@ -782,15 +788,18 @@ header ul li a{
     border: 1px solid black;
     background:rgb(189, 231, 255);
   }
-  .menu-btn{
+  .menu-btn:active{
     border: none;
     background: none;
-
   }
-  .menu-btn:hover ~ .dropdown-options{
+  .dropdown {
+    background-color: white;
+  }
+  /* .menu-btn:hover ~ .dropdown-options{
     position: fixed;
     right: 0;
-  }
+  } */
+
   .dropdown-options ul li:first-child{
     margin-left: 0rem;
     margin-top: 1.25rem;
