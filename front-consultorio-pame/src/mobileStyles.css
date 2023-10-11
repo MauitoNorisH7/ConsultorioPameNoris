@@ -1,0 +1,21 @@
+/* TESTIMONIOS */
+@media screen and (max-width: 650px) {
+      /* Inicio de configuración de los testimonios */
+  .testimonials{
+    background-size: 300%;
+    background-position: bottom;
+  }
+
+  .testimonialsGroup{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  .testimonial{
+    width: auto;
+  }
+  .testimonialM3, .testimonialM4{
+    display: none;
+  }
+  /* Fin de configuración de testimonios */
+}

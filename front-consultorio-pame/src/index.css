@@ -1,3 +1,6 @@
+@import './mobileStyles.css';
+
+
 body, html{
 width: 100%;
 height: 100%;
@@ -37,7 +40,6 @@ header{
   display: flex;
   position: fixed;
   align-items: center;
-  flex-wrap: wrap;
   background: white;
   opacity: 95%;
   box-shadow: 0px 0px 10px 0.5px black;
@@ -45,12 +47,14 @@ header{
 }
 
 .container{
-  min-height: 6rem;
+  height: 6rem;
+  width: auto;
   overflow: hidden;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
+
+
 .instagramLogo{
   display: flex;
   position: absolute;
@@ -63,7 +67,13 @@ header{
   right: 7.5%;
   align-items: center;
 }
-.facebook-logoM, .instagramLogoM{
+.tiktokLogo{
+  display: flex;
+  position: absolute;
+  right: 12.5%;
+  align-items: center;
+}
+.facebook-logoM, .instagramLogoM, .tiktokLogoM{
   display: none;
 }
 .dropdown-btn-header{
@@ -71,13 +81,14 @@ header{
 }
 
 .imgLogo{
-  width: 120px;
-  margin-left: +30px;
+  max-height: 5.5rem;
+  width: 100%;
+  margin-left: 5px;
 }
 .verticalLine{
   border-left: 1.25px solid grey;
   height: 72px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .actions{
@@ -106,25 +117,12 @@ header ul li {
   padding: 0 25px;
   list-style: none;
 }
-
 header ul li a{
   font-weight: bold;
 }
-#container1{
-  transition: 1s;
-}
-#container2{
-  transition: 1s;
-}
-#container3{
-  transition: 1s;
-}
-#container4{
-  transition: 1s;
-}
-#container5{
-  transition: 1s;
-}
+#container1, #container2, #container3, #container4, #container5{
+  transition: 1s;}
+
 /* Front page configuration */
 .frontpageContainer{
   width: 100%;
@@ -680,11 +678,8 @@ header ul li a{
   display: none;
 }
 
-@media (max-width: 500px){
-  html{
-    /* Modificaciones de la medida REM */
-    font-size: 14px;
-  }
+/* Cuando las acciones de la barra colisionen con las redes sociales, las acciones pasaran a ser boton*/
+@media (max-width: 750px){
   /* Modificaciones en la barra de navegación */
   .mainHeader{
     width: 100%;
@@ -695,34 +690,29 @@ header ul li a{
     display: none;
   }
   .action-mobile{
+    height: 6rem;
+    min-width: calc(100vw - 150px);
     display: flex;
-    min-width: 10rem;
     align-items: center;
+    
     justify-content: space-around;
   }
-  /* Configuración del logo de Facebook, sobre todo su posición */
-  .facebook-logoM{
+  /* Configuración de logos de redes sociales; hacer que se muestre */
+  .facebook-logoM, .instagramLogoM, .tiktokLogoM{
     display: flex;
     position: relative;
-    align-items: center;
+    /* align-items: center; */
   }
-  .facebook-logo{
+  .facebook-logo, .instagramLogo, .tiktokLogo{
     display: none;
   }
-  /* Configuración del logo de Instagram, sobre todo su posición */
-  .instagramLogoM{
-    display: flex;
-    position: relative;
-    align-items: center;
-  }
-  .instagramLogo{
-    display: none;
-  }
+  /* Configuración del logo de Instagram; hacer que se muestre */
+
   /* Posición del botón desplegable de acciones */
   .dropdown-btn-header{
     display: flex;
-    position: absolute;
-    right: 1rem;
+    position: relative;
+    right: 0;
   }
   /* Configuración de la lista de las acciones del botón desplegable */
   .dropdown-options{
@@ -760,7 +750,13 @@ header ul li a{
     align-items: start;
   }
   /* Fin de la configuracón del botón desplegable */
+}
 
+@media (max-width: 500px){
+  html{
+    /* Modificaciones de la medida REM */
+    font-size: 14px;
+  }
   /* Configuración de la portada */
   .bgFrontpage{
     width: auto;
@@ -769,25 +765,6 @@ header ul li a{
     left: -30rem;
   }
   /* Fin de configuración de la portada */
-
-  /* Inicio de configuración de los testimonios */
-  .testimonials{
-    background-size: 300%;
-    background-position: bottom;
-  }
-
-  .testimonialsGroup{
-    display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
-  }
-  .testimonial{
-    width: auto;
-  }
-  .testimonialM3, .testimonialM4{
-    display: none;
-  }
-  /* Fin de configuración de testimonios */
 
   /* Inicio de configuración de los servicios */
   /* carrousel */
