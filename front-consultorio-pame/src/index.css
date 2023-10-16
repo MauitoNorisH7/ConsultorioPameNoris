@@ -1,5 +1,9 @@
 @import './mobileStyles.css';
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 
 body, html{
 width: 100%;
@@ -209,6 +213,10 @@ header ul li a{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+/* No mostrar el modo movil */
+.mobileCarousel{
+  display: none;
 }
 .testimonialsGroup{
   width: 75%;
@@ -766,6 +774,9 @@ header ul li a{
   }
   /* Fin de configuración de la portada */
 
+/* Configuracion de ipad y pc de los testimonios */
+
+
   /* Inicio de configuración de los servicios */
   /* carrousel */
   .servicesGroup{  
@@ -845,6 +856,7 @@ header ul li a{
 }
 
 
+/* Tablet */
 @media (max-width: 1024px){
   html{
     /* Modificaciones de la medida REM */

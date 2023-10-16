@@ -1,21 +1,46 @@
 /* TESTIMONIOS */
 @media screen and (max-width: 650px) {
       /* Inicio de configuración de los testimonios */
+
   .testimonials{
-    background-size: 300%;
+    display: none;
+  }
+  .bgGradientMobile{
+    background: linear-gradient(to top, rgb(53,200,255), 0.025%, rgb(248,248,248));
+    overflow: hidden;
+    justify-content: center;
+  }
+  .testimonialsBgGradient{
+    background-image: url("./img/Wave.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-position: bottom;
+    height: 300px;  
+    overflow: hidden;
   }
 
-  .testimonialsGroup{
-    display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
-  }
-  .testimonial{
+  .mobileCarousel{
+    margin-top: 50px;
     width: auto;
+    display: block;
   }
-  .testimonialM3, .testimonialM4{
-    display: none;
+  .center{
+    height: auto;
+    display: auto;
+  }
+  .slide{
+    height: 195px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: calc(50% - 150px);
+  }
+  
+  .testimonial{
+    display: flex;
+    width: 250px;
+    height: 185px;
+    margin-left: none;
+    margin-right: none;
   }
   /* Fin de configuración de testimonios */
 }
