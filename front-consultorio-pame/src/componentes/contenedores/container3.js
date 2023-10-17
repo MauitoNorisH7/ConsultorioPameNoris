@@ -64,12 +64,13 @@ export const Container3 = () => {
         <div className="singleService">
           <img className="imgService" src="Servicio-3.png" alt="Servicio 3" />
 
-          <h2>Prótesis removibles</h2>
+          <h2>Prótesis fija</h2>
 
           <div className="descriptionService">
             <p>
-              Prótesis dentales de “quitar y poner” para reponer brechas amplias
-              de piezas dentales perdidas.
+              Coronas, puentes, carillas e incrustaciones que se colocan sobre
+              el diente para recuperar su tamaño, forma, resistencia, tamaño y
+              apariencia.
             </p>
           </div>
         </div>
@@ -81,12 +82,12 @@ export const Container3 = () => {
         <div className="singleService">
           <img className="imgService" src="Servicio-3.png" alt="Servicio 3" />
 
-          <h2>Prótesis removibles</h2>
+          <h2>Extracciones dentales</h2>
 
           <div className="descriptionService">
             <p>
-              Prótesis dentales de “quitar y poner” para reponer brechas amplias
-              de piezas dentales perdidas.
+              Extracción de muelas del juicio, dientes ampliamente dañados,
+              restos de dientes y con infección.
             </p>
           </div>
         </div>
@@ -98,12 +99,12 @@ export const Container3 = () => {
         <div className="singleService">
           <img className="imgService" src="Servicio-3.png" alt="Servicio 3" />
 
-          <h2>Prótesis removibles</h2>
+          <h2>Endodoncia, periodoncia, rehabilitación de implantes</h2>
 
           <div className="descriptionService">
             <p>
-              Prótesis dentales de “quitar y poner” para reponer brechas amplias
-              de piezas dentales perdidas.
+              Interdisciplinario con otros especialistas de la salud en la
+              clínica.
             </p>
           </div>
         </div>
@@ -115,12 +116,13 @@ export const Container3 = () => {
         <div className="singleService">
           <img className="imgService" src="Servicio-3.png" alt="Servicio 3" />
 
-          <h2>Prótesis removibles</h2>
+          <h2>Resinas dentales (empastes):</h2>
 
           <div className="descriptionService">
             <p>
-              Prótesis dentales de “quitar y poner” para reponer brechas amplias
-              de piezas dentales perdidas.
+              Proceso en el cual se elimina la caries existente en el diente
+              para reconstruir con resina del mismo color del diente dejándolo
+              de manera natural.
             </p>
           </div>
         </div>
@@ -132,12 +134,13 @@ export const Container3 = () => {
         <div className="singleService">
           <img className="imgService" src="Servicio-3.png" alt="Servicio 3" />
 
-          <h2>Prótesis removibles</h2>
+          <h2>Diagnóstico</h2>
 
           <div className="descriptionService">
             <p>
-              Prótesis dentales de “quitar y poner” para reponer brechas amplias
-              de piezas dentales perdidas.
+              Cita en la cual se examina a profundidad el estado de los dientes
+              y boca del paciente, se elabora un diagnóstico, plan de
+              tratamiento y un presupuesto
             </p>
           </div>
         </div>

@@ -284,13 +284,14 @@ header ul li a{
   height: 40rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   z-index: 1;
 }
 
 .singleService{
-  width: 22rem;
+  width: 20rem;
   height: 80%;
   display: flex;
   flex-direction: column;
