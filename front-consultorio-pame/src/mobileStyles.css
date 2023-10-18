@@ -1,7 +1,8 @@
 /* TESTIMONIOS */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 845px) {
       /* Inicio de configuración de los testimonios */
 
+      /* Ya no se muestran los 4 testimonios a la vez */
   .testimonials{
     display: none;
   }
@@ -10,6 +11,7 @@
     overflow: hidden;
     justify-content: center;
   }
+  /* Disminucion de la altura */
   .testimonialsBgGradient{
     background-image: url("./img/Wave.png");
     background-repeat: no-repeat;
@@ -19,6 +21,7 @@
     overflow: hidden;
   }
 
+  /* Configuracion del carousel */
   .mobileCarousel{
     margin-top: 50px;
     width: auto;
@@ -43,4 +46,43 @@
     margin-right: none;
   }
   /* Fin de configuración de testimonios */
+}
+
+/* SERVICIOS */
+@media screen and (max-width: 680px) {
+  .serviceGroup{
+    height: max-content;
+    justify-content: space-around;
+  }
+  .singleService {
+    width: 40%;
+    
+    height: min-content;
+    display: block;
+    border-radius: 2.5%;
+    margin: 0 10px 15px 10px;
+    padding: 1rem 0 1rem 0;
+    box-shadow: 0px 0px 10px 0.5px rgb(188, 194, 208);
+}
+.imgService{
+  display: none;
+}
+.imgServiceMobile{
+  display: flex;
+  border: 5px solid rgb(0,151,239);
+  border-radius: 2.5%;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.singleService img{
+  max-width: 120%;
+}
+.highHeight{
+  min-width: 3rem;
+}
+
+}
+@media screen and (max-width: 450px) {
+  .singleService h2{
+    font-size: 1rem;
+  }
 }
