@@ -33,7 +33,7 @@ export const Container3 = () => {
             className={
               estadosTexto["servicio1"]
                 ? "descriptionService text-container expanded"
-                : " descriptionService text-container collapsed"
+                : "descriptionService text-container collapsed"
             }
           >
             <img
@@ -158,7 +158,7 @@ export const Container3 = () => {
             className={
               estadosTexto["servicio4"]
                 ? "descriptionService text-container expanded"
-                : " descriptionService text-container collapsed"
+                : "descriptionService text-container collapsed"
             }
           >
             <img
