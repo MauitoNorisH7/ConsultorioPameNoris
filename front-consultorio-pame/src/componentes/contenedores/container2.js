@@ -204,7 +204,7 @@ export const Container2 = () => {
         </div>
         <div className="mobileCarousel">
           <Slider {...settings}>
-            <div className="slide">
+            <div className="slideCarousel">
               <div className="testimonial testimonialM1">
                 <div className="img-name-starPerson">
                   <img
@@ -251,7 +251,7 @@ export const Container2 = () => {
               </div>
             </div>
 
-            <div className="slide">
+            <div className="slideCarousel">
               <div className="testimonial testimonialM2">
                 <div className="img-name-starPerson">
                   <img
@@ -297,7 +297,7 @@ export const Container2 = () => {
                 </div>
               </div>
             </div>
-            <div className="slide">
+            <div className="slideCarousel">
               <div className="testimonial testimonialM3">
                 <div className="img-name-starPerson">
                   <img
@@ -343,7 +343,7 @@ export const Container2 = () => {
                 </div>
               </div>
             </div>
-            <div className="slide">
+            <div className="slideCarousel">
               <div className="testimonial testimonialM4">
                 <div className="img-name-starPerson">
                   <img
