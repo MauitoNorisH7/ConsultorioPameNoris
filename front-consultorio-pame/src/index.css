@@ -784,25 +784,26 @@ header ul li a{
   }
   /* Configuración de la lista de las acciones del botón desplegable */
   .dropdown-options{
-    display: flex;
     width: 10rem;
     height: 18.5rem;
     position: fixed;
     top: 6rem;
-    right: -15rem;
-    transition: 1s;
     box-shadow: inset 0px 7px 10px -7px black;
-    border: 1px solid black;
     background:rgb(189, 231, 255);
+
+    /* transition: 1s;
+    transform-origin: top;
+    transform: scaleY(1); */
   }
   .menu-btn{
     border: none;
     background: none;
-
   }
   .menu-btn:hover ~ .dropdown-options{
     position: fixed;
     right: 0;
+
+    
   }
   .dropdown-options ul li:first-child{
     margin-left: 0rem;
