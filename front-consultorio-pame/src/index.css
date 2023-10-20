@@ -570,8 +570,9 @@ header ul li a{
   /* CONTACT */
 .section-contact{
   width: 100%;
-  height: 47.5rem;
+  height: fit-content;
   display: flex;
+  overflow: hidden;
   flex-wrap: wrap;
   z-index: 1;
 }
@@ -596,8 +597,8 @@ header ul li a{
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  align-items: start;
-  padding: 2rem 0 0 3rem;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 0 20px 20px -20px rgb(183, 183, 183),
               inset 0 -20px 20px -20px rgb(183, 183, 183);
 }
@@ -630,10 +631,12 @@ header ul li a{
   color: rgb(0,151,239);
 }
 .contact-form{
+  width: 80%;
   display: flex;
   flex-direction: column;
   text-align: start;
   align-items: start;
+  flex-wrap: wrap;
 }
 .contact-form label{
   font-size: larger;
@@ -642,7 +645,7 @@ header ul li a{
 }
 
 .contact-input-txt{
-  width: 40rem;
+  width: 100%;
   height: 2rem;
   border: none;
   font-size: larger;
@@ -652,7 +655,7 @@ header ul li a{
 }
 
 .input-booktime{
-  width: 40rem;
+  width: 100%;
   height: auto;
   margin: -0.5rem 0 1rem 0;
   box-sizing: border-box;
@@ -706,6 +709,13 @@ header ul li a{
 .input-booktime label:first-child{
   margin: 0 0 0 0;
 }
+.submit-div{
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  justify-content: end;
+}
 .submit-btn{
   width: 10rem;
   height: 2.5rem;
@@ -718,12 +728,8 @@ header ul li a{
   border-top-left-radius: 1rem;
   font-size: larger;
   font-weight: 500;
-}
-.submit-div{
-  width: 40rem;
-  height: auto;
-  display: flex;
-  justify-content: right;
+  position: relative;
+  margin-bottom: 2rem;
 }
 .copyright-disclaimer-pc{
   width: 100%;
@@ -738,6 +744,7 @@ header ul li a{
 .copyright-disclaimer-mobile{
   display: none;
 }
+
 
 /* Cuando las acciones de la barra colisionen con las redes sociales, las acciones pasaran a ser boton*/
 @media (max-width: 750px){
@@ -831,21 +838,6 @@ header ul li a{
 
 /* Configuracion de ipad y pc de los testimonios */
 
-
-  /* Inicio de configuración de los servicios */
-  /* carrousel */
-  /* .servicesGroup{  
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
-    scroll-behavior: auto;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-  } */
-  /* Fin de cofiguración de los servicios */
-
   /* Inicio de configuración de galería */
   .section-gallery .slider{
     display: none;
@@ -859,55 +851,6 @@ header ul li a{
     padding-right: 1rem;
   }
   /* Fin de configuración de galería */
-
-  /* Inicio de configuración de contacto */
-  .section-contact{
-    width: 100%;
-    height:79rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-  }
-  .contact{
-    flex-direction: column;
-  }
-  .contact h1{
-    margin: 1rem 0 1rem 0;
-  }
-  .contact h3{
-    margin: 0 0 2rem 0
-  }
-  .location{
-    width: 100%;
-    height: auto;
-  }
-  .appointment{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-items: start;
-    padding-top: 0;
-  }
-  .contact-input-txt, .input-booktime{
-    width: calc(50% - 2rem);
-  }
-  .submit-div{
-    width: calc(50% - 2rem);
-    margin-bottom: 1rem;
-  }
-  .copyright-disclaimer-pc{
-    display: none;
-  }
-  .copyright-disclaimer-mobile{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: relative;
-    margin-top: 31.75rem;
-  }
-  /* Fin de configuración de contacto */
 }
 
 
@@ -944,41 +887,6 @@ header ul li a{
 
   /* Fin de configuración del index */
 
-  /* Configuración de los testimonios (ancho) */
-  /* .testimonialsGroup{
-    width: 90%;
-    height: 85%;
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .testimonial{
-    width: 40%;
-    height: 40%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    
-    border-radius: 2.5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    box-shadow: 0px 0px 10px 0.5px rgb(77,87,109);
-    z-index: 1;
-  } */
-
-   /* Inicio de configuración de los servicios */
-  /* carrousel */
-  /* .servicesGroup{  
-    justify-content: start;
-
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-  } */
-  /* Fin de cofiguración de los servicios */
-
     /* Inicio de configuración de galería */
     .section-gallery .slider{
       display: none;
@@ -992,32 +900,4 @@ header ul li a{
       padding-right: 1rem;
     }
     /* Fin de configuración de galería */
-
-    /* Inicio de configuración de contacto */
-    .section-contact{
-      max-width: 100%;
-      overflow-x: hidden;
-    }
-    .contact-form{
-      width: 27rem;
-      flex-wrap: wrap;
-    }
-    .contact-input-txt{
-      max-width: 25rem;
-    }
-    .input-booktime{
-      width: 100%;
-      height: auto;
-      margin: -0.5rem 0 1rem 0;
-      box-sizing: border-box;
-      display: flex;
-      position: relative;
-      justify-content: left;  
-    }
-    .submit-div{
-      width: 40rem;
-      height: auto;
-      display: flex;
-      justify-content: center;
-    }
 }

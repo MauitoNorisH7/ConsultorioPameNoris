@@ -86,3 +86,51 @@
     font-size: 1rem;
   }
 }
+
+
+/* CONTACTO */
+@media screen and (max-width: 899px) {
+  /* Inicio de configuración de contacto */
+  .section-contact{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact{
+    flex-direction: column;
+    height: fit-content;
+  }
+  .contact h1{
+    margin: 1rem 0 1rem 0;
+  }
+  .contact h3{
+    margin: 0 0 2rem 0
+  }
+  .location{
+    width: 100%;
+    height: fit-content;
+  }
+  .appointment{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .copyright-disclaimer-pc{
+    display: none;
+  }
+  .copyright-disclaimer-mobile{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    margin-top: -1rem;
+    position: relative;
+  }
+  /* Fin de configuración de contacto */
+}

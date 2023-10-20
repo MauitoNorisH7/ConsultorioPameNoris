@@ -216,7 +216,7 @@ export const Container3 = () => {
           </div>
           <i
             className={`bx bx-md ${
-              estadosTexto["servicio4"] ? "bx-minus-circle" : "bx-plus-circle"
+              estadosTexto["servicio5"] ? "bx-minus-circle" : "bx-plus-circle"
             } limpieza`}
             onClick={() => manejarClick("servicio5")}
           ></i>
