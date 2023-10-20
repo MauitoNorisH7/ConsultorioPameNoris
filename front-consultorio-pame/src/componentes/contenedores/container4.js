@@ -2,26 +2,7 @@ import React from "react";
 
 window.onload = function () {
   document.getElementById("first-btn").click();
-  //   document.getElementById("second-btn").click();
-  //   document.getElementById("third-btn").click();
-  //   document.getElementById("first-btn").click();
-
-  //   setTimeout(() => {}, 500);
 };
-
-// const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-// setTimeout(async function timeoutCallback() {
-//   await delay(9000);
-//   document.getElementById("first-btn").click();
-
-//   await delay(9000);
-//   document.getElementById("second-btn").click();
-
-//   await delay(9000);
-//   document.getElementById("third-btn").click();
-
-//   setTimeout(timeoutCallback, 9000);
-// });
 
 export const Container4 = () => {
   return (
