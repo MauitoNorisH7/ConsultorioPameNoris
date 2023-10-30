@@ -471,9 +471,9 @@ header ul li a{
   box-sizing: border-box;
   width: 23.5rem;
   height: 19.5rem;
-  background-image: url(../public/Website-Images/Fotos/2.jpeg);
+  background-image: url(../public/Website-Images/Fotos/edificio.jpg);
   background-repeat: no-repeat;
-  background-position: 0; 
+  background-position: 0 -100px; 
   background-size: cover;
   box-shadow: inset 0 0 2px 0px black;
   border-radius: 1%;}
@@ -489,8 +489,10 @@ header ul li a{
   box-sizing: border-box;
   width: 35rem;
   height: 19.5rem;
-  background-image: url(../public/Website-Images/Fotos/4.jpg);
+  background-image: url(../public/Website-Images/Fotos/equipamiento2.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -200px;
   box-shadow: inset 0 0 2px 0px black;
   border-radius: 1%;}
 .img5{
@@ -507,8 +509,10 @@ header ul li a{
   box-sizing: border-box;
   width: 35rem;
   height: 19.5rem;
-  background-image: url(../public/Website-Images/Fotos/6.jpg);
+  background-image: url(../public/Website-Images/Fotos/consulta.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -425px;
   box-shadow: inset 0 0 2px 0px black;
   border-radius: 1%;}
 .img7{
@@ -523,8 +527,9 @@ header ul li a{
   box-sizing: border-box;
   width: 23.5rem;
   height: 19.5rem;
-  background-image: url(../public/Website-Images/Fotos/8.jpg);
+  background-image: url(../public/Website-Images/Fotos/macetaFocus2.jpg);
   background-size: cover;
+  background-position: 0 -75px;
   box-shadow: inset 0 0 2px 0px black;
   border-radius: 1%;}
 .img9{
@@ -550,8 +555,9 @@ header ul li a{
   box-sizing: border-box;
   width: 23.5rem;
   height: 19.5rem;
-  background-image: url(../public/Website-Images/Fotos/11.jpg);
+  background-image: url(../public/Website-Images/Fotos/recepcion.jpg);
   background-size: cover;
+  background-position: 0 -125px;
   box-shadow: inset 0 0 2px 0px black;
   border-radius: 1%;}
 .img12{
@@ -572,21 +578,24 @@ header ul li a{
   width: 100%;
   height: fit-content;
   display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   flex-wrap: wrap;
   z-index: 1;
 }
 .contact{
   width: 100%;
-  height: 45rem;
+  height: fit-content;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 /* Dentro del div contact van la ubicación y la cita */
 .location{
-  width: 40%;
-  height: 45rem;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 5%  ;
   background: rgb(52,200,255);
   box-shadow: inset 0 20px 20px -20px rgb(183, 183, 183),
               inset 0 -20px 20px -20px rgb(183, 183, 183);
@@ -627,7 +636,7 @@ header ul li a{
 /* Fin de estilización de location */
 
 /* Inicio de esitlización de appointment */
-.appointment h1{
+/* .appointment h1{
   color: rgb(0,151,239);
 }
 .contact-form{
@@ -730,7 +739,7 @@ header ul li a{
   font-weight: 500;
   position: relative;
   margin-bottom: 2rem;
-}
+} */
 .copyright-disclaimer-pc{
   width: 100%;
   font-size: large;
@@ -782,45 +791,40 @@ header ul li a{
     position: relative;
     right: 0;
   }
-  /* Configuración de la lista de las acciones del botón desplegable */
-  .dropdown-options{
-    width: 10rem;
-    height: 18.5rem;
-    position: fixed;
-    top: 6rem;
-    box-shadow: inset 0px 7px 10px -7px black;
-    background:rgb(189, 231, 255);
 
-    /* transition: 1s;
-    transform-origin: top;
-    transform: scaleY(1); */
-  }
   .menu-btn{
     border: none;
     background: none;
   }
-  .menu-btn:hover ~ .dropdown-options{
-    position: fixed;
-    right: 0;
 
-    
+  .dropdown-options{
+    width: 700px;
+    height: fit-content;
+    z-index: 0 ;
+    background:rgb(189, 231, 255);
+    box-shadow: inset 0px 7px 10px -7px black;
+    display: none;
+    position: fixed;
+    /* right: -100%;
+    top: 6rem; */
+    justify-content: center;
+    align-items: center;
   }
-  .dropdown-options ul li:first-child{
-    margin-left: 0rem;
-    margin-top: 1.25rem;
-  }
-  .dropdown-options ul li{
-    margin: 1rem 0 1rem 0;
-  }
+
   .dropdown{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    align-items: start;
+    gap: 1.5rem;
+    padding: 1rem 0 1.2rem 0;
+  }
+  .menu-btn:hover ~ .dropdown-options{
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 6rem;
+    transition: 0.2s ease-in  ;
   }
   /* Fin de la configuracón del botón desplegable */
-
-  
 }
 
 @media (max-width: 500px){
@@ -865,6 +869,7 @@ header ul li a{
   .mainHeader{
     width: 100%;
     height: 6rem;
+    z-index: 1;
   }
 
   /* Configuración del index (barra de acciones) */

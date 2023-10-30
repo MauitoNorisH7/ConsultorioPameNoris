@@ -1,40 +1,40 @@
 import React, { useState, useEffect, useRef } from "react";
 
 export const Header = () => {
-  const [visibleDropDown, setDropDown] = useState(false);
-  const dropdownRef = useRef(null);
-  const buttonRef = useRef(null);
+  // const [visibleDropDown, setDropDown] = useState(false);
+  // const dropdownRef = useRef(null);
+  // const buttonRef = useRef(null);
 
-  const manejarMenuClick = () => {
-    setDropDown(!visibleDropDown);
-  };
+  // const manejarMenuClick = () => {
+  //   setDropDown(!visibleDropDown);
+  // };
 
-  useEffect(() => {
-    const manerarClickDocumento = (e) => {
-      // Si el clic fue fuera del menú desplegable y fuera del botón que activa el menú
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(e.target) &&
-        !buttonRef.current.contains(e.target)
-      ) {
-        setDropDown(false);
-      }
-    };
+  // useEffect(() => {
+  //   const manerarClickDocumento = (e) => {
+  //     // Si el clic fue fuera del menú desplegable y fuera del botón que activa el menú
+  //     if (
+  //       dropdownRef.current &&
+  //       !dropdownRef.current.contains(e.target) &&
+  //       !buttonRef.current.contains(e.target)
+  //     ) {
+  //       setDropDown(false);
+  //     }
+  //   };
 
-    const manejarScrollDocumento = () => {
-      setDropDown(false);
-    };
+  //   const manejarScrollDocumento = () => {
+  //     setDropDown(false);
+  //   };
 
-    // Agregando event listeners al document
-    document.addEventListener("click", manerarClickDocumento);
-    document.addEventListener("scroll", manejarScrollDocumento);
+  //   // Agregando event listeners al document
+  //   document.addEventListener("click", manerarClickDocumento);
+  //   document.addEventListener("scroll", manejarScrollDocumento);
 
-    // Limpiando event listeners al desmontar el componente
-    return () => {
-      document.removeEventListener("click", manerarClickDocumento);
-      document.removeEventListener("scroll", manejarScrollDocumento);
-    };
-  }, [visibleDropDown]);
+  //   // Limpiando event listeners al desmontar el componente
+  //   return () => {
+  //     document.removeEventListener("click", manerarClickDocumento);
+  //     document.removeEventListener("scroll", manejarScrollDocumento);
+  //   };
+  // }, [visibleDropDown]);
 
   return (
     <header className="mainHeader">
@@ -168,12 +168,8 @@ export const Header = () => {
         </div>
 
         <div className="dropdown-btn-header">
-          <button
-            className="menu-btn"
-            ref={buttonRef}
-            onClick={manejarMenuClick}
-          >
-            <a rel="noreferrer">
+          <button className="menu-btn">
+            <a>
               <box-icon
                 name="menu"
                 animation="flashing-hover"
@@ -182,11 +178,8 @@ export const Header = () => {
               ></box-icon>
             </a>
           </button>
-          <div
-            className="dropdown-options"
-            ref={dropdownRef}
-            style={{ display: visibleDropDown ? "block" : "none" }}
-          >
+
+          <div className="dropdown-options">
             <ul className="dropdown">
               <li>
                 <a className="dropdown-option-1" href="#Quien-soy">

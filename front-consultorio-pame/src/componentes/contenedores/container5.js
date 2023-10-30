@@ -5,10 +5,7 @@ export const Container5 = () => {
     <section id="Contacto" className="section-contact">
       <div className="contact">
         <div className="location">
-          <h1>
-            Información <br />
-            de contacto
-          </h1>
+          <h1>Información de contacto</h1>
           <iframe
             id="location-frame"
             title="Ubicación del consultorio de Pamela Noris"
@@ -23,7 +20,7 @@ export const Container5 = () => {
             </h3>
           </div>
         </div>
-        <div className="appointment">
+        {/* <div className="appointment">
           <h1>Agenda una cita</h1>
 
           <form className="contact-form">
@@ -35,7 +32,7 @@ export const Container5 = () => {
               id="name"
               name="name"
               autocomplete="name"
-            />{" "}
+            />
             <br />
             <label for="cellphonenumber">Número de celular:</label>
             <br />
@@ -44,7 +41,7 @@ export const Container5 = () => {
               className="contact-input-txt"
               id="cellphonenumber"
               name="cellphonenumber"
-            />{" "}
+            />
             <br />
             <label for="email">Correo:</label>
             <br />
@@ -54,9 +51,8 @@ export const Container5 = () => {
               id="email"
               name="email"
               autoComplete="email"
-            />{" "}
+            />
             <br />
-            {/* <div className='input-booktime'> */}
             <label for="radio-time1">Horario:</label>
             <br />
             <input
@@ -135,7 +131,7 @@ export const Container5 = () => {
               <input type="submit" className="submit-btn"></input>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
       <br />
       <div className="copyright-disclaimer-pc">
@@ -143,7 +139,7 @@ export const Container5 = () => {
         <p>All Rights Reserved. You keep all rights to your material.</p>
       </div>
       <div className="copyright-disclaimer-mobile">
-        <box-icon className="copyright-logo" name="copyright"></box-icon>{" "}
+        <box-icon className="copyright-logo" name="copyright"></box-icon>
         <p>All Rights Reserved. You keep all rights to your material.</p>
       </div>
     </section>
