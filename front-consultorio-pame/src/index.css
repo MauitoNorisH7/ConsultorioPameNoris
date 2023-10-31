@@ -778,6 +778,7 @@ header ul li a{
   .facebook-logoM, .instagramLogoM, .tiktokLogoM{
     display: flex;
     position: relative;
+    transition: 1s;
     /* align-items: center; */
   }
   .facebook-logo, .instagramLogo, .tiktokLogo{
@@ -796,34 +797,52 @@ header ul li a{
     border: none;
     background: none;
   }
-
+  
   .dropdown-options{
-    width: 700px;
+    width: 150px;
     height: fit-content;
     z-index: 0 ;
-    background:rgb(189, 231, 255);
+    background: rgb(248,248,248);
     box-shadow: inset 0px 7px 10px -7px black;
-    display: none;
+    display: flex;
     position: fixed;
-    /* right: -100%;
-    top: 6rem; */
+    right: -150px;
+    top: 6rem;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
   }
 
+  .true-hidden{
+    display: flex;
+    position: fixed;
+    right: -150px;
+    top: 6rem;
+
+  }
+    .false-displayed{
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 6rem;
+  }
   .dropdown{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem 0 1.2rem 0;
   }
-  .menu-btn:hover ~ .dropdown-options{
+
+
+
+  /* .menu-btn:hover ~ .dropdown-options{
     display: flex;
     position: fixed;
     right: 0;
     top: 6rem;
-    transition: 0.2s ease-in  ;
-  }
+  } */
+
+
   /* Fin de la configuracón del botón desplegable */
 }
 
