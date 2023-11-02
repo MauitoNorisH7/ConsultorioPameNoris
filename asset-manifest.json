@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/ConsultorioPameNoris/static/css/main.228c82db.css",
+    "main.js": "/ConsultorioPameNoris/static/js/main.ca48ed0a.js",
+    "static/js/787.83f27689.chunk.js": "/ConsultorioPameNoris/static/js/787.83f27689.chunk.js",
+    "static/media/1.jpg": "/ConsultorioPameNoris/static/media/1.58dc05f1753f8b8b8793.jpg",
+    "static/media/3.jpg": "/ConsultorioPameNoris/static/media/3.a8c4594ee892da034aa1.jpg",
+    "static/media/equipamiento2.jpg": "/ConsultorioPameNoris/static/media/equipamiento2.4de341a5e42c8143ff11.jpg",
+    "static/media/10.jpg": "/ConsultorioPameNoris/static/media/10.587c2a88fa3ff34d0133.jpg",
+    "static/media/5.jpg": "/ConsultorioPameNoris/static/media/5.576efce9c764090ebc0e.jpg",
+    "static/media/12.jpg": "/ConsultorioPameNoris/static/media/12.617ed43771ee6ef3c89c.jpg",
+    "static/media/7.jpg": "/ConsultorioPameNoris/static/media/7.18d41d999a07952df93f.jpg",
+    "static/media/recepcion.jpg": "/ConsultorioPameNoris/static/media/recepcion.e19d1c7ebe93a256f76d.jpg",
+    "static/media/9.jpeg": "/ConsultorioPameNoris/static/media/9.f4829938b6008f33a157.jpeg",
+    "static/media/consulta.jpg": "/ConsultorioPameNoris/static/media/consulta.c7974cd5210922b218e0.jpg",
+    "static/media/edificio.jpg": "/ConsultorioPameNoris/static/media/edificio.eee1a21af9006e3ca249.jpg",
+    "static/media/macetaFocus2.jpg": "/ConsultorioPameNoris/static/media/macetaFocus2.dd5072df8242d001e1cf.jpg",
+    "static/media/Wave.png": "/ConsultorioPameNoris/static/media/Wave.2cdbee938a3694b70965.png",
+    "static/media/slick.svg": "/ConsultorioPameNoris/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ConsultorioPameNoris/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ConsultorioPameNoris/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/ConsultorioPameNoris/index.html",
+    "static/media/slick.woff": "/ConsultorioPameNoris/static/media/slick.295183786cd8a1389865.woff",
+    "main.228c82db.css.map": "/ConsultorioPameNoris/static/css/main.228c82db.css.map",
+    "main.ca48ed0a.js.map": "/ConsultorioPameNoris/static/js/main.ca48ed0a.js.map",
+    "787.83f27689.chunk.js.map": "/ConsultorioPameNoris/static/js/787.83f27689.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.228c82db.css",
+    "static/js/main.ca48ed0a.js"
+  ]
+}
