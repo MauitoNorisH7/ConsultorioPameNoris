@@ -30,7 +30,7 @@ export const Container2 = () => {
                   alt="Primer cliente"
                 />
                 <div className="namePerson">
-                  <p>Julián Álvarez</p>
+                  <p>Alejandro Martínez</p>
                   <img
                     className="stars"
                     src="Estrellas.png"
@@ -61,8 +61,8 @@ export const Container2 = () => {
 
               <div className="comment">
                 <p>
-                  Search and locate exactly what you need in no time. Our
-                  platfom allows you to llok through people grups.
+                  Excelente atención, el lugar muy limpio y muy profesional la
+                  doctora
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@ export const Container2 = () => {
                   alt="Segundo cliente"
                 />
                 <div className="namePerson">
-                  <p>Julián Álvarez</p>
+                  <p>Ana Laura González</p>
                   <img
                     className="stars"
                     src="Estrellas.png"
@@ -106,8 +106,8 @@ export const Container2 = () => {
 
               <div className="comment">
                 <p>
-                  Search and locate exactly what you need in no time. Our
-                  platfom allows you to llok through people grups.
+                  Un excelente trato, muy paciente y cuidadosa, profesionalismo,
+                  detallista y siempre está al pendiente de sus pacientes
                 </p>
               </div>
             </div>
@@ -120,7 +120,7 @@ export const Container2 = () => {
                   alt="Tercer cliente"
                 />
                 <div className="namePerson">
-                  <p>Julián Álvarez</p>
+                  <p>Miriana</p>
                   <img
                     className="stars"
                     src="Estrellas.png"
@@ -151,8 +151,8 @@ export const Container2 = () => {
 
               <div className="comment">
                 <p>
-                  Search and locate exactly what you need in no time. Our
-                  platfom allows you to llok through people grups.
+                  Cita con puntualidad, excelente ubicación, excelente higiene
+                  en el consultorio y por parte de la Dra.
                 </p>
               </div>
             </div>
@@ -165,7 +165,7 @@ export const Container2 = () => {
                   alt="Cuarto cliente"
                 />
                 <div className="namePerson">
-                  <p>Julián Álvarez</p>
+                  <p>María Inés</p>
                   <img
                     className="stars"
                     src="Estrellas.png"
@@ -195,8 +195,8 @@ export const Container2 = () => {
               </div>
               <div className="comment">
                 <p>
-                  Search and locate exactly what you need in no time. Our
-                  platfom allows you to llok through people grups.
+                  Salí súper feliz con mi sonrisa y más que nada tranquila, me
+                  sentí segura todo el proceso y satisfecha con mis resultados
                 </p>
               </div>
             </div>
@@ -213,7 +213,7 @@ export const Container2 = () => {
                     alt="Primer cliente"
                   />
                   <div className="namePerson">
-                    <p>Julián Álvarez</p>
+                    <p>Alejandro Martínez</p>
                     <img
                       className="stars"
                       src="Estrellas.png"
@@ -244,8 +244,8 @@ export const Container2 = () => {
 
                 <div className="comment">
                   <p>
-                    Search and locate exactly what you need in no time. Our
-                    platfom allows you to llok through people grups.
+                    Excelente atención, el lugar muy limpio y muy profesional la
+                    doctora
                   </p>
                 </div>
               </div>
@@ -260,7 +260,7 @@ export const Container2 = () => {
                     alt="Segundo cliente"
                   />
                   <div className="namePerson">
-                    <p>Julián Álvarez</p>
+                    <p>Ana Laura González</p>
                     <img
                       className="stars"
                       src="Estrellas.png"
@@ -291,8 +291,9 @@ export const Container2 = () => {
 
                 <div className="comment">
                   <p>
-                    Search and locate exactly what you need in no time. Our
-                    platfom allows you to llok through people grups.
+                    Un excelente trato, muy paciente y cuidadosa,
+                    profesionalismo, detallista y siempre está al pendiente de
+                    sus pacientes
                   </p>
                 </div>
               </div>
@@ -306,7 +307,7 @@ export const Container2 = () => {
                     alt="Tercer cliente"
                   />
                   <div className="namePerson">
-                    <p>Julián Álvarez</p>
+                    <p>Miriana</p>
                     <img
                       className="stars"
                       src="Estrellas.png"
@@ -337,8 +338,8 @@ export const Container2 = () => {
 
                 <div className="comment">
                   <p>
-                    Search and locate exactly what you need in no time. Our
-                    platfom allows you to llok through people grups.
+                    Cita con puntualidad, excelente ubicación, excelente higiene
+                    en el consultorio y por parte de la Dra.
                   </p>
                 </div>
               </div>
@@ -352,7 +353,7 @@ export const Container2 = () => {
                     alt="Cuarto cliente"
                   />
                   <div className="namePerson">
-                    <p>Julián Álvarez</p>
+                    <p>María Inés</p>
                     <img
                       className="stars"
                       src="Estrellas.png"
@@ -382,8 +383,8 @@ export const Container2 = () => {
                 </div>
                 <div className="comment">
                   <p>
-                    Search and locate exactly what you need in no time. Our
-                    platfom allows you to llok through people grups.
+                    Salí súper feliz con mi sonrisa y más que nada tranquila, me
+                    sentí segura todo el proceso y satisfecha con mis resultados
                   </p>
                 </div>
               </div>
